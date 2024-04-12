@@ -13,6 +13,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`bg-[#0c0c0c] ${inter.className}`}>
         <div className="body-first-child" />
+        {/* <div className="body-second-child" /> */}
         {children}
       </body>
     </html>

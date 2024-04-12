@@ -10,7 +10,20 @@
 body {
   position: relative;
   min-height: 100vh;
-  /* overflow: hidden; */
+  overflow-x: hidden;
+}
+.body-second-child{
+  position: absolute;
+  left: 10%;
+  bottom: -30%;
+  transform: translate(50%, 50%);
+  transform-origin: 50% 50%;
+  /* rotate: 45deg; */
+  z-index: -5;
+  width: 400px;
+  min-height: 600px;
+  background-color: #ec0e886c;
+  animation: rotate 10s linear infinite;
 }
 .body-first-child {
   content: "";
@@ -25,15 +38,15 @@ body {
 body::before {
   content: "";
   position: absolute;
-  left: -10%;
+  right: -10%;
   top: -30%;
-  transform: translate(-50%, -50%);
-  /* transform-origin: -22.5% -22.5%; */
+  /* transform: translate(50%, 50%); */
+  /* transform-origin: 50% 50%; */
   /* rotate: 45deg; */
   z-index: -5;
   width: 400px;
   min-height: 600px;
-  background-color: rgb(113, 40, 40);
+  background-color: #ec0e886c;
   animation: rotate 10s linear infinite;
 }
 
