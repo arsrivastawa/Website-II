@@ -10,6 +10,7 @@
 body {
   position: relative;
   min-height: 100vh;
+  /* overflow: hidden; */
 }
 .body-first-child {
   content: "";
@@ -24,21 +25,24 @@ body {
 body::before {
   content: "";
   position: absolute;
-  left: 10%;
-  top: 10%;
+  left: -10%;
+  top: -30%;
   transform: translate(-50%, -50%);
-  transform-origin: -22.5% -22.5%;
-  rotate: 45deg;
+  /* transform-origin: -22.5% -22.5%; */
+  /* rotate: 45deg; */
   z-index: -5;
-  width: 600px;
+  width: 400px;
   min-height: 600px;
-  background-color: rgb(150, 210, 255);
+  background-color: rgb(113, 40, 40);
   animation: rotate 10s linear infinite;
 }
 
 @keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
   100% {
-    rotate: 405deg;
+    transform: rotate(360deg);
   }
 }
 
@@ -51,4 +55,13 @@ body::after {
   width: 100%;
   background-color: black;
   min-height: 100vh;
+}
+.stroke-text {
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: rgb(186, 67, 67);
+  color: rgba(0, 0, 0, 0);
+  /* color: transparent; Text color */
+  /* background-clip: text; */
+  /* text-shadow: -1px -1px 0 rgb(186, 67, 67), 1px -1px 0 rgb(186, 67, 67),
+    -1px 1px 0 rgb(186, 67, 67), 1px 1px 0 rgb(186, 67, 67); Shadow with different offsets to create the stroke */
 }
