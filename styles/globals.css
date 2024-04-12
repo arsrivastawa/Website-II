@@ -6,3 +6,49 @@
   font-family: "GameOfSquids";
   src: url("../fonts/GameOfSquids.otf") format("opentype");
 }
+
+body {
+  position: relative;
+  min-height: 100vh;
+}
+.body-first-child {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  backdrop-filter: blur(200px);
+  min-height: 100vh;
+}
+body::before {
+  content: "";
+  position: absolute;
+  left: 10%;
+  top: 10%;
+  transform: translate(-50%, -50%);
+  transform-origin: -22.5% -22.5%;
+  rotate: 45deg;
+  z-index: -5;
+  width: 600px;
+  min-height: 600px;
+  background-color: rgb(150, 210, 255);
+  animation: rotate 10s linear infinite;
+}
+
+@keyframes rotate {
+  100% {
+    rotate: 405deg;
+  }
+}
+
+body::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -10;
+  width: 100%;
+  background-color: black;
+  min-height: 100vh;
+}
