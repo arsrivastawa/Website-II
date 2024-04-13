@@ -12,8 +12,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`bg-[#0c0c0c] ${inter.className}`}>
-        <div className="body-first-child" />
-        {/* <div className="body-second-child" /> */}
+        <div className="absolute overflow-x-hidden -z-[79] overflow-y-hidden h-screen bg-animation-container w-full">
+          <div className="body-first-child" />
+          <div className="body-second-child" />
+          <div className="body-third-child" />
+        </div>
         {children}
       </body>
     </html>
