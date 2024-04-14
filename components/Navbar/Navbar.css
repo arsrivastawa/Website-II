@@ -1,0 +1,24 @@
+@media screen and (max-width: 890px) {
+  .navbar-join-btn,
+  .navlinks-container {
+    display: none !important;
+  }
+  .hamburger-icon-container {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 890px) {
+  .navbar-join-btn {
+    display: block !important;
+  }
+  .navlinks-container {
+    display: flex !important;
+  }
+  .hamburger-icon-container {
+    display: none;
+  }
+}
+.hamburger-icon-container > h1{
+    transform: rotateY(180deg);
+}

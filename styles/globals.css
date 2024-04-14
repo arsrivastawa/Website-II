@@ -13,17 +13,23 @@ body {
 }
 .body-second-child {
   position: absolute;
-  left: -10%;
-  bottom: -30%;
   transform: translate(50%, 50%);
-  transform-origin: 50% 50%;
   /* rotate: 45deg; */
   z-index: -90;
-  width: 400px;
-  min-height: 600px;
-  background-color: #ec0e886c;
+  background-color: #ec0e88c6;
   animation: rotate 10s linear infinite;
 }
+
+.body-third-child {
+  position: absolute;
+  /* transform: translate(50%, 50%); */
+  /* transform-origin: 50% 50%; */
+  /* rotate: 45deg; */
+  z-index: -90;
+  background-color: #ec0e88c6;
+  animation: rotate 10s linear infinite;
+}
+
 .body-first-child {
   content: "";
   position: absolute;
@@ -34,26 +40,13 @@ body {
   backdrop-filter: blur(200px);
   min-height: 100vh;
 }
-.body-third-child {
-  position: absolute;
-  right: -10%;
-  top: -30%;
-  /* transform: translate(50%, 50%); */
-  /* transform-origin: 50% 50%; */
-  /* rotate: 45deg; */
-  z-index: -90;
-  width: 400px;
-  min-height: 600px;
-  background-color: #ec0e886c;
-  animation: rotate 10s linear infinite;
-}
 
 @keyframes rotate {
   0% {
-    transform: rotate(0deg);
+    transform: rotateZ(0deg);
   }
   100% {
-    transform: rotate(360deg);
+    transform: rotateZ(360deg);
   }
 }
 
@@ -75,4 +68,8 @@ body::after {
   /* background-clip: text; */
   /* text-shadow: -1px -1px 0 rgb(186, 67, 67), 1px -1px 0 rgb(186, 67, 67),
     -1px 1px 0 rgb(186, 67, 67), 1px 1px 0 rgb(186, 67, 67); Shadow with different offsets to create the stroke */
+}
+
+.scroll-lock {
+  overflow: hidden;
 }
