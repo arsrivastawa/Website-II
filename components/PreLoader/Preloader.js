@@ -1,27 +1,30 @@
 "use client";
-// components/PreLoader.js
-import { useEffect, useState } from "react";
-import Router from "next/router";
+import "./PreLoader.css";
 
 const PreLoader = () => {
-  const [loading, setLoading] = useState(false);
+  return (
+    <>
+      <div className="bg-[#000000] flex justify-center items-center min-h-screen">
+        <div class="loader">
+          <svg viewBox="0 0 80 80">
+            <circle id="test" cx="40" cy="40" r="32"></circle>
+          </svg>
+        </div>
 
-  useEffect(() => {
-    const handleStart = () => setLoading(true);
-    const handleComplete = () => setLoading(false);
+        <div class="loader triangle">
+          <svg viewBox="0 0 86 80">
+            <polygon points="43 8 79 72 7 72"></polygon>
+          </svg>
+        </div>
 
-    Router.events.on("routeChangeStart", handleStart);
-    Router.events.on("routeChangeComplete", handleComplete);
-    Router.events.on("routeChangeError", handleComplete);
-
-    return () => {
-      Router.events.off("routeChangeStart", handleStart);
-      Router.events.off("routeChangeComplete", handleComplete);
-      Router.events.off("routeChangeError", handleComplete);
-    };
-  }, []);
-
-  return loading ? <div className="text-[150px]">Loading...</div> : null;
+        <div class="loader">
+          <svg viewBox="0 0 80 80">
+            <rect x="8" y="8" width="64" height="64"></rect>
+          </svg>
+        </div>
+      </div>
+    </>
+  );
 };
 
 export default PreLoader;
