@@ -1,6 +1,4 @@
-"use client";
 import "./PreLoader.css";
-
 const PreLoader = () => {
   return (
     <>
