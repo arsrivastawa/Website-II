@@ -1,4 +1,4 @@
-// "use client";
+"use client";
 import CookingAnimation from "@/components/CookingAnimation/CookingAnimation";
 import Navbar from "@/components/Navbar/Navbar";
 import HeroHeadingBackgroundText from "@/components/Hero/HeroHeading";
@@ -7,28 +7,28 @@ import { BackgroundBeamsAnimation } from "@/components/BackgroundBeams/Backgroun
 import Background from "@/components/Background/Background";
 import Loader from "./loading";
 // import PreLoader from "@/components/PreLoader/Preloader";
-// import { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 export default async function Home() {
-  // const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(false);
 
-  // useEffect(() => {
-  //   setLoading(true);
-  // }, []);
+  useEffect(() => {
+    setLoading(true);
+  }, []);
 
   return (
     <>
-      {/* {!loading ? (
+      {!loading ? (
         <Loader />
       ) : (
-        <> */}
+        <>
           <Background />
           <Navbar />
           <HeroHeadingBackgroundText />
           <HeroMain />
           <BackgroundBeamsAnimation />
-        {/* </>
-      )} */}
+        </>
+      )}
     </>
   );
 }
