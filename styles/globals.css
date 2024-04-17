@@ -1,11 +1,10 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 @font-face {
   font-family: "GameOfSquids";
   src: url("../fonts/GameOfSquids.otf") format("opentype");
 }
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 body {
   position: relative;

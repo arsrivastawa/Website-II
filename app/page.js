@@ -1,5 +1,4 @@
 "use client";
-import CookingAnimation from "@/components/CookingAnimation/CookingAnimation";
 import Navbar from "@/components/Navbar/Navbar";
 import HeroHeadingBackgroundText from "@/components/Hero/HeroHeading";
 import HeroMain from "@/components/Hero/HeroMain";
