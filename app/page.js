@@ -7,6 +7,7 @@ import Background from "@/components/Background/Background";
 import Loader from "./loading";
 // import PreLoader from "@/components/PreLoader/Preloader";
 import { useEffect, useState } from "react";
+import WhatIsHackoverse from "@/components/WhatIsHackoverse/WhatIsHackoverse";
 
 export default async function Home() {
   const [loading, setLoading] = useState(false);
@@ -26,6 +27,7 @@ export default async function Home() {
           <HeroHeadingBackgroundText />
           <HeroMain />
           <BackgroundBeamsAnimation />
+          <WhatIsHackoverse />
         </>
       )}
     </>

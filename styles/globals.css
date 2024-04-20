@@ -8,6 +8,7 @@
 
 body {
   position: relative;
+  background-color: black !important;
   min-height: 100vh;
 }
 .body-second-child {

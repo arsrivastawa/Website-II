@@ -4,7 +4,7 @@ import Button from "../Button/Button";
 function HeroMain() {
   return (
     <div>
-      <div className="px-5 h-full xs:px-8 sm:pt-12 sm:px-10 pt-12">
+      <div className="px-5 h-[90vh] xs:px-8 sm:pt-12 sm:px-10 pt-12">
         <div className="px-2 sm:px-6 flex flex-col gap-8 w-full justify-center desktop:justify-start desktop:w-1/2">
           <div className="w-full">
             <h1 className="text-center desktop:text-start w-full text-4xl xs:text-6xl md:text-6xl desktop:text-7xl lg:text-7xl xl:text-8xl text-white font-squid font-normal">
