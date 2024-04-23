@@ -9,10 +9,11 @@ import Loader from "./loading";
 import { useEffect, useState } from "react";
 import WhatIsHackoverse from "@/components/WhatIsHackoverse/WhatIsHackoverse";
 import Cards from "@/components/Cards";
+import HorizontalScroll from "@/components/horizontalScroll/page";
 
 export default async function Home() {
   const [loading, setLoading] = useState(false);
-
+  // console.log(card);
   useEffect(() => {
     setLoading(true);
   }, []);
@@ -29,7 +30,7 @@ export default async function Home() {
           <HeroMain />
           <BackgroundBeamsAnimation />
           <WhatIsHackoverse />
-          <Cards/>
+          <HorizontalScroll />
         </>
       )}
     </>
