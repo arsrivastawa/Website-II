@@ -26,6 +26,7 @@ module.exports = {
   darkMode: "class",
   theme: {
     screens: {
+      'se':"320px",
       xs: "480px",
       sm: "640px",
       md: "768px",
