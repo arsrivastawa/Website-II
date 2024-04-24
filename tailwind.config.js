@@ -38,6 +38,7 @@ module.exports = {
     },
     extend: {
       fontFamily: {
+        shareTechMono: ["shareTechMono", "monospace"],
         squid: ["GameOfSquids", "sans-serif"],
       },
       backgroundImage: {

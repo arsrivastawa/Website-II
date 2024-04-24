@@ -13,16 +13,16 @@ function HeroMain() {
               <span className="ml-16 sm:ml-20 lg:ml-24">VErSe</span>
             </h1>
           </div>
-          <div className="font-mono font-thin text-white">
+          <div className="text-white font-shareTechMono">
             <p>
-              Welcome to HackOVerse, presented by the Hackathon and Coding Club
+              Welcome to HackOverse, presented by the Hackathon and Coding Club
               at BIT Sindri! Dive into innovation with hackathons, workshops,
               tech talks, competitions, showcases, and project expos. Join us to
-              celebrate tech and shape the future! See you at HackOVerse!
+              celebrate tech and shape the future! See you at HackOverse!
             </p>
           </div>
           <div>
-            <Button  title={"details"} />
+            <Button title={"details"} />
           </div>
         </div>
       </div>

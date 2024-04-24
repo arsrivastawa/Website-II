@@ -2,6 +2,12 @@
   font-family: "GameOfSquids";
   src: url("../fonts/GameOfSquids.otf") format("opentype");
 }
+
+@font-face {
+  font-family: "ShareTechMono";
+  src: url("../fonts/ShareTechMono-Regular.ttf") format("truetype");
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
