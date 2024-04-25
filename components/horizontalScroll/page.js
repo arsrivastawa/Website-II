@@ -21,13 +21,13 @@ const HorizontalScrollCarousel = ({ card }) => {
     target: targetRef,
   });
 
-  const x = useTransform(scrollYProgress, [0, 1], ["1%", "-85%"]);
+  const x = useTransform(scrollYProgress, [0, 1], ["1%", "-75%"]);
 
   return (
     <TracingBeam className={"px-6"}>
       <section ref={targetRef} className="relative h-[300vh]">
-        <div className="sticky top-0 w-auto flex h-[100vh] items-center overflow-hidden">
-          <motion.div style={{ x }} className=" flex gap-4 cursor-pointer">
+        <div className="sticky top-0 w-auto flex  h-[100vh] overflow-hidden  justify-between items-center mx-0">
+          <motion.div style={{ x }} className=" flex gap:4  cursor-pointer">
             {card.map((card) => {
               return <Cards data={card} key={card.id} />;
             })}

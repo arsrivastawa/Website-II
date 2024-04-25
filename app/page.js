@@ -10,6 +10,7 @@ import { useEffect, useState } from "react";
 import WhatIsHackoverse from "@/components/WhatIsHackoverse/WhatIsHackoverse";
 import Cards from "@/components/Cards";
 import HorizontalScroll from "@/components/horizontalScroll/page";
+import Gallery from  "@/components/Gallery/page";
 
 export default async function Home() {
   const [loading, setLoading] = useState(false);
@@ -31,6 +32,7 @@ export default async function Home() {
           <BackgroundBeamsAnimation />
           <WhatIsHackoverse />
           <HorizontalScroll />
+          <Gallery/>
         </>
       )}
     </>
