@@ -1,11 +1,10 @@
 import React from "react";
 import { FaInstagram } from "react-icons/fa";
 
-
 const footer = () => {
   return (
     <div>
-      <footer class="bg-black text-white ">
+      <footer class="bg-black text-white border-t border-[#ec0e89] ">
         <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
           <div class="md:flex md:justify-between">
             <div class="mb-6 md:mb-0">
@@ -15,7 +14,7 @@ const footer = () => {
                   class="h-16 me-3"
                   alt="HnCC logo"
                 />
-                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+                <span class="self-center text-xl sm:text-2xl font-semibold whitespace-nowrap dark:text-white">
                   Hackathon and Coding Club
                 </span>
               </a>
@@ -66,7 +65,6 @@ const footer = () => {
                   </li>
                 </ul>
               </div>
-              
             </div>
           </div>
           <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
@@ -121,7 +119,6 @@ const footer = () => {
                 </svg>
                 <span class="sr-only">Twitter page</span>
               </a>
-              
             </div>
           </div>
         </div>
