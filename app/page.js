@@ -11,6 +11,7 @@ import WhatIsHackoverse from "@/components/WhatIsHackoverse/WhatIsHackoverse";
 import Cards from "@/components/Cards";
 import HorizontalScroll from "@/components/horizontalScroll/page";
 import Gallery from  "@/components/Gallery/page";
+import Footer from "@/components/Footer/footer";
 
 export default async function Home() {
   const [loading, setLoading] = useState(false);
@@ -33,6 +34,7 @@ export default async function Home() {
           <WhatIsHackoverse />
           <HorizontalScroll />
           <Gallery/>
+          <Footer/>
         </>
       )}
     </>
