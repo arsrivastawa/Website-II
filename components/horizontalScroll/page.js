@@ -22,27 +22,27 @@ const HorizontalScrollCarousel = ({ card }) => {
     target: targetRef,
   });
 
-  const x = useTransform(scrollYProgress, [0, 1], ["1%", "-85%"]);
+  const x = useTransform(scrollYProgress, [0, 1], ["1%", "-80%"]);
 
   return (
-    <TracingBeam className={"px-6"}>
-      <section ref={targetRef} className="relative h-[300vh]">
-        <div className="sticky top-0 w-auto flex h-[100vh] items-center overflow-hidden">
-          {/* <div className="w-full pb-10"> */}
-          {/* <OpacityText
-              classNameForContainer={"font-squid text-3xl"}
-              start={"top 80%"}
-              end={"top 60%"}
-              text={"Our Events"}
-            /> */}
-          {/* </div> */}
-          <motion.div style={{ x }} className=" flex gap-4 cursor-pointer">
-            {card.map((card) => {
-              return <Cards data={card} key={card.id} />;
-            })}
-          </motion.div>
-        </div>
-      </section>
-    </TracingBeam>
+    <>
+      <OpacityText
+        classNameForContainer={"font-squid text-3xl"}
+        start={"top 90%"}
+        end={"top 80%"} 
+        text={"Events"}
+      />
+      <TracingBeam className={"px-6"}>
+        <section ref={targetRef} className="relative h-[300vh]">
+          <div className="sticky top-0 w-auto flex h-[100vh] overflow-hidden justify-between items-center mx-0">
+            <motion.div style={{ x }} className="flex gap:4 cursor-pointer">
+              {card.map((card) => {
+                return <Cards data={card} key={card.id} />;
+              })}
+            </motion.div>
+          </div>
+        </section>
+      </TracingBeam>
+    </>
   );
 };
