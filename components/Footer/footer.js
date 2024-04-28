@@ -1,11 +1,10 @@
 import React from "react";
 import { FaInstagram } from "react-icons/fa";
 
-
 const footer = () => {
   return (
     <div>
-      <footer class="bg-black text-white ">
+      <footer class="bg-black text-white border-t border-[#ec0e89] ">
         <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
           <div class="md:flex md:justify-between">
             <div class="mb-6 md:mb-0">
@@ -15,68 +14,35 @@ const footer = () => {
                   class="h-16 me-3"
                   alt="HnCC logo"
                 />
-                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+                <span class="self-center text-base sm:text-2xl font-semibold whitespace-nowrap dark:text-white">
                   Hackathon and Coding Club
                 </span>
               </a>
             </div>
             <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
               <div>
-                <h2 class="mb-6 text-sm font-semibold text-white uppercase dark:text-white">
-                  Navigate
-                </h2>
                 <ul class="text-white dark:text-gray-400 font-medium flex flex-col justify-evenly">
                   <li class="mb-2">
-                    <a href="#" class="hover:underline">
-                      Events
-                    </a>
+                    <FooterLink title={"Home"} navigateTo={"#navbar"} />
                   </li>
                   <li className="mb-2">
-                    <a href="#" class="hover:underline">
-                      Gallery
-                    </a>
+                    <FooterLink title={"Events"} navigateTo={"#events"} />
                   </li>
                   <li>
-                    <a href="#" class=" my-2 hover:underline">
-                      Home
-                    </a>
+                    <FooterLink title={"Gallery"} navigateTo={"#gallery"} />
                   </li>
                 </ul>
               </div>
-              <div>
-                <h2 class="mb-6 text-sm font-semibold text-white uppercase dark:text-white">
-                  Follow us
-                </h2>
-                <ul class="text-white dark:text-gray-400 font-medium">
-                  <li class="mb-4">
-                    <a
-                      href="https://github.com/hnccbits"
-                      class="hover:underline "
-                    >
-                      Github
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.linkedin.com/company/hnccbits/"
-                      class="hover:underline"
-                    >
-                      Linked In
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              
             </div>
           </div>
           <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
           <div class="sm:flex sm:items-center sm:justify-between">
             <span class="text-sm text-white sm:text-center dark:text-gray-400">
-              © 2024{" "}
+              Designed with ❤️ by
               <a href="https://www.hnccbits.com/" class="hover:underline">
-                Hackathon and Coding Club
+                {" "}
+                Team HnCC.
               </a>
-              . All Rights Reserved.
             </span>
             <div class="flex mt-4 sm:justify-center sm:mt-0 ">
               <a
@@ -121,7 +87,6 @@ const footer = () => {
                 </svg>
                 <span class="sr-only">Twitter page</span>
               </a>
-              
             </div>
           </div>
         </div>
@@ -129,5 +94,18 @@ const footer = () => {
     </div>
   );
 };
+
+function FooterLink({ title, navigateTo }) {
+  return (
+    <div class="mb-4 w-[78px] cursor-pointer h-[22px] relative group overflow-hidden">
+      <a href={navigateTo}>
+        <div className="absolute font-squid duration-300 group-hover:bottom-[0%] ease-out -bottom-[115%] left-0">
+          <span className="block uppercase">{title}</span>
+          <span className="block uppercase">{title}</span>
+        </div>
+      </a>
+    </div>
+  );
+}
 
 export default footer;

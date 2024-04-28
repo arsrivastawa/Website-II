@@ -16,19 +16,15 @@ const Cards = ({ data }) => {
           <span>{"2021"}</span>
         </span>
       </div>
-      <div className=" content xs:w-full se:w-[200zpx] xs:h-full text-center items-center flex justify-center flex-col">
+      <div className=" content xs:w-full se:w-[200zpx] xs:h-full text-center items-start flex justify-center flex-col">
         <img
-          className="se:w-full object-contain bg-no-repeat xs:h-full xs:w-full"
+          className="se:w-full object-contain object-left bg-no-repeat xs:h-full xs:w-full"
           src="/assets/war_of_web.png"
         ></img>
-        <span className="xs:block text-left">
+        <span className="xs:block w-full text-left">
           <span className="font-squid xs:block font-bold se:text-sm  xs:text-xl">
             {"TEchtaLK"}
           </span>
-          <span className=" se:hidden xs:block">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit,
-            eum.
-          </span>{" "}
         </span>
       </div>
     </div>

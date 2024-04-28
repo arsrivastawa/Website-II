@@ -11,71 +11,96 @@
 .gallery .column {
   position: relative;
   height: 100%;
-  width: 25%;
-  min-width: 250px;
-  display: flex;
+  width: 100%;
+  display: none;
   flex-direction: column;
   gap: 2vw;
 }
-@media screen and (max-width: 640px) {
+@media screen and (min-width: 480px) {
   .gallery .column {
     background-color: black;
     position: relative;
     height: 80%;
     width: 33%;
     min-width: 200px;
-    display: flex;
     flex-direction: column;
     gap: 1vw;
   }
+  .col1 {
+    display: flex !important;
+  }
+  .col2 {
+    display: flex !important;
+  }
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 640px) {
   .gallery .column {
     background-color: black;
     position: relative;
     height: 80%;
     width: 33%;
     min-width: 200px;
-    display: flex;
     flex-direction: column;
     gap: 1vw;
   }
+  .col1 {
+    display: flex !important;
+  }
+  .col2 {
+    display: flex !important;
+  }
+  .col3 {
+    display: flex !important;
+  }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 890px) {
   .gallery .column {
     background-color: black;
     position: relative;
     height: 80%;
-    width: 25%;
-    min-width: 250px;
-    display: flex;
+    width: 100%;
     flex-direction: column;
     gap: 1vw;
+  }
+  .col1 {
+    display: flex !important;
+  }
+  .col2 {
+    display: flex !important;
+  }
+  .col3 {
+    display: flex !important;
+  }
+  .col4 {
+    display: flex !important;
   }
 }
 
-@media screen and (max-width: 890px) {
+@media screen and (min-width: 768px) {
   .gallery .column {
     background-color: black;
     position: relative;
     height: 80%;
-    width: 25%;
-    min-width: 160px;
-    display: flex;
+    width: 100%;
     flex-direction: column;
     gap: 1vw;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 320px) {
   .gallery .column {
     background-color: black;
     position: relative;
     height: 80%;
     width: 50%;
     min-width: 155px;
-    display: flex;
     flex-direction: column;
     gap: 1vw;
+  }
+  .col1 {
+    display: flex !important ;
+  }
+  .col2 {
+    display: flex !important ;
   }
 }
 /* @media screen and (max-width: 640px) {
@@ -100,7 +125,6 @@
 .gallery .column .imageContainer img {
   -o-object-fit: cover;
   object-fit: cover;
-  
 }
 .gallery .column:nth-of-type(1) {
   top: -45%;
@@ -116,7 +140,7 @@
 }
 
 .spacer {
-  /* height: 100vh; */
+  height: 10vh;
 } /*# sourceMappingURL=page.module.css.map */
 
 .gallery.main {

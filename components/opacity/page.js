@@ -7,6 +7,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import SmoothScroll from "../smoothScroll";
 
 const OpacityText = ({
+  id,
   styleObj,
   text,
   start,
@@ -69,6 +70,7 @@ const OpacityText = ({
   return (
     <SmoothScroll>
       <main
+        id={id ? id : ""}
         ref={container}
         style={styleObj}
         className={`${classNameForContainer} ${styles.main}`}

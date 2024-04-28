@@ -3,10 +3,12 @@ import OpacityText from "../opacity/page";
 
 function WhatIsHackoverse() {
   return (
-    <div className="w-full px-14 py-14 bg-black text-white">
+    <div className="w-full px-0 py-0 desktop:px-14 desktop:py-14 bg-black text-white">
       <div className="w-full justify-center">
         <OpacityText
-          classNameForContainer={"font-squid text-3xl"}
+          classNameForContainer={
+            "font-squid text-xl sm:text-2xl desktop:text-3xl"
+          }
           start={"top 80%"}
           end={"top 60%"}
           text={"What is HacKOVErSe ?"}
@@ -15,7 +17,7 @@ function WhatIsHackoverse() {
       <div className="w-full flex justify-center mt-10">
         <OpacityText
           classNameForContainer={"font-shareTechMono mb-20"}
-          classNameForBody={"text-xl"}
+          classNameForBody={"text-base sm:text-lg desktop:text-xl"}
           start={"top 80%"}
           end={"bottom 80%"}
           text={

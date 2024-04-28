@@ -27,9 +27,12 @@ const HorizontalScrollCarousel = ({ card }) => {
   return (
     <>
       <OpacityText
-        classNameForContainer={"font-squid text-3xl"}
+        id={"events"}
+        classNameForContainer={
+          "font-squid text-xl sm:text-2xl desktop:text-3xl"
+        }
         start={"top 90%"}
-        end={"top 80%"} 
+        end={"top 80%"}
         text={"Events"}
       />
       <TracingBeam className={"px-6"}>

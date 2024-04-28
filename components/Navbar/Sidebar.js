@@ -76,26 +76,21 @@ function SideBar({ isMounted, unMount }) {
         </div>
       </div>
       <div className="grid font-squid place-content-center font-oxygen font-medium gap-y-4 p-4 text-base sm:text-lg">
-        <Link href={"/"}>
+        <a onClick={unMount} href={"#navbar"}>
           <li className="lg:px-8 md:px-6 duration-200 sm:px-4 flex text-center justify-center items-center px-8 hover:cursor-pointer text-white hover:text-[#ec0e89]">
             Home
           </li>
-        </Link>
-        <Link href={"/about"}>
+        </a>
+        <a onClick={unMount} href={"#events"}>
           <li className="lg:px-8 md:px-6 duration-200 sm:px-4 flex text-center justify-center items-center px-8 hover:cursor-pointer text-white hover:text-[#ec0e89]">
             Events
           </li>{" "}
-        </Link>
-        <Link href={"/services"}>
+        </a>
+        <a onClick={unMount} href={"#gallery"}>
           <li className="lg:px-8 md:px-6 duration-200 sm:px-4 flex text-center justify-center items-center px-8 hover:cursor-pointer text-white hover:text-[#ec0e89]">
             Gallery
           </li>{" "}
-        </Link>
-        <Link href={"/contact"}>
-          <li className="lg:px-8 md:px-6 duration-200 sm:px-4 flex text-center justify-center items-center px-8 hover:cursor-pointer text-white hover:text-[#ec0e89]">
-            Demo
-          </li>
-        </Link>
+        </a>
       </div>
     </div>,
     document.getElementById("overlay")

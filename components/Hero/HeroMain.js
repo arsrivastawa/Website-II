@@ -22,7 +22,7 @@ function HeroMain() {
             </p>
           </div>
           <div>
-            <Button title={"details"} />
+            <Button title={"Scroll⬇️"} />
           </div>
         </div>
       </div>

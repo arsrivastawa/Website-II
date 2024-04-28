@@ -59,17 +59,34 @@ export default function Home() {
   return (
     <>
       <OpacityText
-        classNameForContainer={"font-squid text-3xl my-12"}
+      id={"gallery"}
+        classNameForContainer={"font-squid text-xl sm:text-2xl desktop:text-3xl my-12"}
         start={"top 90%"}
         end={"top 80%"}
         text={"Gallery"}
       />
       <main className=" `${styles.main }`">
         <div ref={gallery} className={styles.gallery}>
-          <Column images={[images[0], images[1], images[2]]} y={y} />
-          <Column images={[images[3], images[4], images[5]]} y={y2} />
-          <Column images={[images[6], images[7], images[8]]} y={y3} />
-          <Column images={[images[9], images[10], images[11]]} y={y4} />
+          <Column
+            className={styles.col1}
+            images={[images[0], images[1], images[2]]}
+            y={y}
+          />
+          <Column
+            className={styles.col2}
+            images={[images[3], images[4], images[5]]}
+            y={y2}
+          />
+          <Column
+            className={styles.col3}
+            images={[images[6], images[7], images[8]]}
+            y={y3}
+          />
+          <Column
+            className={styles.col4}
+            images={[images[9], images[10], images[11]]}
+            y={y4}
+          />
         </div>
         <div className={styles.spacer}></div>
       </main>
@@ -77,9 +94,9 @@ export default function Home() {
   );
 }
 
-const Column = ({ images, y }) => {
+const Column = ({ images, y, className }) => {
   return (
-    <motion.div className={styles.column} style={{ y }}>
+    <motion.div className={`${styles.column} ${className}`} style={{ y }}>
       {images.map((src, i) => {
         return (
           <div key={i} className={styles.imageContainer}>
